@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{CEAE283F-A15B-4904-8027-1BBB807ECD68}</ProjectGuid>
+    <RootNamespace>siftVisualindex</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LibraryPath>D:\data\conlmap_release_debug\colmap\__build__\lib\SQLite\RelWithDebInfo;D:\data\conlmap_release_debug\colmap\__build__\src\RelWithDebInfo;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\data\colmap-3.6-dev.2\lib\SQLite;D:\data\conlmap_release_debug\colmap\__build__\src\retrieval\visual_index_test_autogen\include_Release;D:\data\colmap-3.6-dev.2\lib;D:\data\colmap-3.6-dev.2\src;C:\local\boost_1_66_0;D:\data\conlmap_release_debug\__install__\include\eigen3;D:\data\conlmap_release_debug\__install__\include;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtCore;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtGui;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtANGLE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>..\Release\colmap.lib;..\..\lib\FLANN\Release\flann.lib;..\..\lib\Graclus\Release\graclus.lib;..\..\lib\LSD\Release\lsd.lib;..\..\lib\PBA\Release\pba.lib;..\..\lib\PoissonRecon\Release\poisson_recon.lib;..\..\lib\SQLite\Release\sqlite3.lib;..\..\lib\SiftGPU\Release\sift_gpu.lib;..\..\lib\VLFeat\Release\vlfeat.lib;C:\local\boost_1_66_0\lib64-msvc-14.1\libboost_filesystem-vc141-mt-x64-1_66.lib;C:\local\boost_1_66_0\lib64-msvc-14.1\libboost_program_options-vc141-mt-x64-1_66.lib;C:\local\boost_1_66_0\lib64-msvc-14.1\libboost_regex-vc141-mt-x64-1_66.lib;C:\local\boost_1_66_0\lib64-msvc-14.1\libboost_system-vc141-mt-x64-1_66.lib;D:\data\conlmap_release_debug\__install__\lib\glog.lib;D:\data\conlmap_release_debug\__install__\lib\FreeImage.lib;D:\data\conlmap_release_debug\__install__\lib\ceres.lib;opengl32.lib;glu32.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5OpenGL.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5Widgets.lib;C:\local\boost_1_66_0\lib64-msvc-14.1\libboost_unit_test_framework-vc141-mt-x64-1_66.lib;D:\data\conlmap_release_debug\__install__\lib\glew32.lib;D:\data\conlmap_release_debug\__install__\lib\glog.lib;D:\data\conlmap_release_debug\__install__\lib\gflags_nothreads_static.lib;shlwapi.lib;D:\data\conlmap_release_debug\__install__\lib\libspqr.lib;D:\data\conlmap_release_debug\__install__\lib\libcholmod.lib;D:\data\conlmap_release_debug\__install__\lib\libccolamd.lib;D:\data\conlmap_release_debug\__install__\lib\libcamd.lib;D:\data\conlmap_release_debug\__install__\lib\libcolamd.lib;D:\data\conlmap_release_debug\__install__\lib\libamd.lib;D:\data\conlmap_release_debug\__install__\lib64\lapack_blas_windows\liblapack.lib;D:\data\conlmap_release_debug\__install__\lib64\lapack_blas_windows\libblas.lib;D:\data\conlmap_release_debug\__install__\lib\suitesparseconfig.lib;D:\data\conlmap_release_debug\__install__\lib\metis.lib;D:\data\conlmap_release_debug\__install__\lib\libcxsparse.lib;D:\data\conlmap_release_debug\__install__\lib64\lapack_blas_windows\liblapack.lib;D:\data\conlmap_release_debug\__install__\lib64\lapack_blas_windows\libblas.lib;D:\data\conlmap_release_debug\__install__\lib\suitesparseconfig.lib;D:\data\conlmap_release_debug\__install__\lib\metis.lib;D:\data\conlmap_release_debug\__install__\lib\libcxsparse.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5Gui.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="loaddatabase.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="loaddatabase.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
